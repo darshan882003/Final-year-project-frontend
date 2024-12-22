@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Blood</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hero-section {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Blood Group Detection</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about_the_blood') }}">About Blood</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('blood_group_check') }}">Blood Group Check</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('our_method') }}">Our Method</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center text-white py-5 bg-dark">
+        <h1 class="display-4">About Blood</h1>
+        <p class="lead">Learn about the importance of blood, its composition, and how it helps save lives.</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">What is Blood?</h2>
+        <p>Blood is a vital fluid in our bodies that performs several crucial functions. It transports oxygen and
+            nutrients to cells, removes waste products, and plays a central role in the immune system and healing
+            processes.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>Composition of Blood</h4>
+                <ul>
+                    <li><strong>Red Blood Cells (RBCs):</strong> Carry oxygen to tissues and remove carbon dioxide from
+                        the body.</li>
+                    <li><strong>White Blood Cells (WBCs):</strong> Defend the body against bacteria, viruses, and other
+                        pathogens.</li>
+                    <li><strong>Platelets:</strong> Play a critical role in stopping bleeding by forming blood clots.
+                    </li>
+                    <li><strong>Plasma:</strong> The liquid component that transports nutrients, electrolytes, and waste
+                        products.</li>
+                    <li><strong>Hemoglobin:</strong> A protein in RBCs that binds to oxygen and gives blood its red
+                        color.</li>
+                    <li><strong>Antibodies:</strong> Proteins in the plasma that help fight infections and provide
+                        immunity.</li>
+                    <li><strong>Blood Types:</strong> Classified into A, B, AB, and O, based on the presence of specific
+                        antigens on RBCs.</li>
+                    <li><strong>Rh Factor:</strong> An additional protein that determines if blood type is positive or
+                        negative.</li>
+                    <li><strong>Functions of Blood:</strong> Transports oxygen, nutrients, and hormones to cells;
+                        removes waste products like carbon dioxide.</li>
+                    <li><strong>Regulation:</strong> Helps maintain body temperature and pH balance.</li>
+                    <li><strong>Protection:</strong> Contains components that prevent excessive blood loss and fight
+                        infections.</li>
+                    <li><strong>Iron:</strong> A key component of hemoglobin, essential for oxygen transport.</li>
+                    <li><strong>Blood Circulation:</strong> Facilitates the delivery of oxygen and nutrients through
+                        arteries and capillaries.</li>
+                    <li><strong>Blood Donations:</strong> Lifesaving practice that provides blood to patients during
+                        surgeries and emergencies.</li>
+                    <li><strong>Stem Cells in Blood:</strong> Found in bone marrow, these cells are responsible for
+                        producing RBCs, WBCs, and platelets.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/blood-composition.jpg') }}" alt="Composition of Blood" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/blood-types.jpg') }}" alt="Blood Types" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h4>Blood Types</h4>
+                <p>Human blood is classified into four main groups based on the presence or absence of certain antigens:
+                </p>
+                <ul>
+                    <li><strong>A Positive (A+):</strong> Contains A antigen and anti-B antibodies, with the Rh factor
+                        present.</li>
+                    <li><strong>A Negative (A-):</strong> Contains A antigen and anti-B antibodies, without the Rh
+                        factor.</li>
+                    <li><strong>B Positive (B+):</strong> Contains B antigen and anti-A antibodies, with the Rh factor
+                        present.</li>
+                    <li><strong>B Negative (B-):</strong> Contains B antigen and anti-A antibodies, without the Rh
+                        factor.</li>
+                    <li><strong>AB Positive (AB+):</strong> Contains both A and B antigens and no antibodies, with the
+                        Rh factor present (universal recipient).</li>
+                    <li><strong>AB Negative (AB-):</strong> Contains both A and B antigens and no antibodies, without
+                        the Rh factor.</li>
+                    <li><strong>O Positive (O+):</strong> Contains no antigens and both anti-A and anti-B antibodies,
+                        with the Rh factor present.</li>
+                    <li><strong>O Negative (O-):</strong> Contains no antigens and both anti-A and anti-B antibodies,
+                        without the Rh factor (universal donor).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center">Why Donate Blood?</h2>
+            <p>Blood donation is a simple act that can save lives. A single donation can help multiple patients in need,
+                including accident victims, surgical patients, and those with chronic illnesses. Your contribution makes
+                a difference.</p>
+        </div>
+    </div>
+
+    <!-- Blood Needs Section -->
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center">When Blood is Needed</h2>
+        <p class="text-center">Discover the critical situations where blood donations save lives.</p>
+        <div class="row g-4">
+            <!-- Accident and Emergency Situations -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/accidents.jpg') }}" class="card-img-top"
+                        alt="Accident and Emergency">
+                    <div class="card-body">
+                        <h5 class="card-title">Accidents and Emergencies</h5>
+                        <p class="card-text">Blood is often required during road accidents, trauma cases, and other
+                            emergencies to compensate for blood loss.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Surgeries -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/surgeries.jpg') }}" class="card-img-top" alt="Surgeries">
+                    <div class="card-body">
+                        <h5 class="card-title">Surgeries</h5>
+                        <p class="card-text">Surgeries such as organ transplants and heart surgeries require blood
+                            transfusions to ensure patient recovery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chronic Illnesses -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/chronic desease.jpg') }}" class="card-img-top"
+                        alt="Chronic Illnesses">
+                    <div class="card-body">
+                        <h5 class="card-title">Chronic Illnesses</h5>
+                        <p class="card-text">Patients with chronic illnesses like cancer or anemia often need
+                            regular blood transfusions to maintain their health.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Childbirth -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/child birth.jpg') }}" class="card-img-top" alt="Childbirth">
+                    <div class="card-body">
+                        <h5 class="card-title">Childbirth</h5>
+                        <p class="card-text">During childbirth, complications may arise, requiring blood transfusions
+                            to ensure the health of the mother and child.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <p>&copy; 2024 Blood Group Detection</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

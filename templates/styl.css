@@ -1,0 +1,300 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #b50000; /* Lighter Red */
+}
+.navbar a {
+    color: white !important;
+}
+.hero-section {
+    background-color: #e10000; /* Lighter Red */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+}
+.footer {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer a {
+    color: white;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.follow-us p {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.7;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #b50000; /* Lighter Red */
+}
+.navbar a {
+    color: white !important;
+}
+.hero-section {
+    background-color: #e10000; /* Lighter Red */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+}
+.footer {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer a {
+    color: white;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #b50000; /* Lighter Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.follow-us p {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.7;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Slide-in animation */
+.slide-in {
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0; /* Initial opacity for the effect */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Button bounce effect */
+.bounce-on-hover:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Fade-in animation for the text */
+.fade-in-text {
+    animation: fadeInText 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Fade-in animation for the image */
+.fade-in-image {
+    animation: fadeInImage 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s; /* Delays the image fade-in slightly for staggered effect */
+}
+
+/* Text animation keyframes */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Slight leftward movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Image animation keyframes */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: translateX(30px); /* Slight rightward movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Card transition from left */
+.fade-left {
+    animation: fadeInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Card transition from right */
+.fade-right {
+    animation: fadeInRight 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Left fade-in animation */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Move from left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Right fade-in animation */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); /* Move from right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Pop effect on hover */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card .btn {
+    transition: transform 0.2s ease;
+}
+
+.card:hover .btn {
+    transform: scale(1.1); /* Button pop effect */
+}
+/* Navbar initial style */
+.navbar {
+    transition: opacity 0.3s ease;
+    background-color: rgba(240, 7, 7, 0.9); /* Initial opacity set to 0.9 */
+}
+
+
